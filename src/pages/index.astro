@@ -5,6 +5,7 @@ import Feature from '@components/Feature.astro'
 import Counter from '@components/Counter.astro'
 import ContentMedia from '@components/ContentMedia.astro'
 
+import Testimonial from '@components/Testimonial.astro';
 import { Accordion, AccordionItem, Avatar, AvatarGroup, Heading, Link } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 ---
@@ -131,6 +132,29 @@ import { Icon } from 'astro-icon/components'
         <Avatar initials="T" title="Taki" subtitle="Coding Club Officer" />
         <Avatar initials="GM" title="Gabriel Morales" subtitle="Chief Information Officer" />
       </AvatarGroup>
+    </div>
+  </section>
+
+  <section class="my-64">
+    <div class="container">
+      <Heading level="h2" class="mb-8">What our members say about CSA</Heading>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Testimonial
+          testimonial="CSA helped me land my first internship! The career prep workshops and networking events were game-changers."
+          name="Sarah M."
+          major="Computer Science, Spring 2023"
+        />
+        <Testimonial
+          testimonial="As a Biology major, I wasn't sure if I'd fit in. But CSA welcomed me with open arms and taught me valuable coding skills for bioinformatics."
+          name="Marcus L."
+          major="Biology, Fall 2023"
+        />
+        <Testimonial
+          testimonial="The hackathons are amazing! I've built three projects that are now in my portfolio. Plus, the pizza is always great!"
+          name="Alex T."
+          major="Engineering, Current Member"
+        />
+      </div>
     </div>
   </section>
   <section class="mt-64 mb-32">

@@ -1,0 +1,42 @@
+---
+interface Props {
+  testimonial: string;
+  name: string;
+  major: string;
+}
+
+const { testimonial, name, major } = Astro.props;
+---
+
+<div class="testimonial-card">
+  <p class="testimonial-text">"{testimonial}"</p>
+  <p class="testimonial-name">- {name}</p>
+  <p class="testimonial-major">{major}</p>
+</div>
+
+<style>
+  .testimonial-card {
+    border: 1px solid var(--border-color-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-l);
+    background-color: var(--background-color-subtle);
+  }
+
+  .testimonial-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--text-color-subtle);
+  }
+
+  .testimonial-name {
+    font-weight: bold;
+    margin-top: var(--space-m);
+    color: var(--text-color);
+  }
+
+  .testimonial-major {
+    font-size: 0.9rem;
+    color: var(--text-color-subtle);
+  }
+</style>
