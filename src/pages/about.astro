@@ -2,16 +2,16 @@
 import DefaultLayout from '@layouts/DefaultLayout.astro';
 import { Heading, Link } from 'accessible-astro-components';
 import Feature from '@components/Feature.astro';
+import ContentMedia from '@components/ContentMedia.astro';
 import { Icon } from 'astro-icon/components';
 ---
 
 <DefaultLayout title="About CSA">
-  <section class="my-12">
     <div class="container">
-      <Heading level="h1" class="mb-8">About the Computer Science Association (CSA)</Heading>
+      <Heading level="h1" class="mb-8 text-center">About the Computer Science Association (CSA)</Heading>
 
-      <div class="my-16">
-        <Heading level="h2" class="mb-4">Our Mission</Heading>
+      <ContentMedia imgSrc="/accessible-components.webp">
+        <Heading level="h2">Our Mission</Heading>
         <p class="text-lg">
           Train, prepare, and unite students for the ever-changing technological frontiers so our members become pioneers of new technologies.
         </p>
@@ -21,11 +21,11 @@ import { Icon } from 'astro-icon/components';
         <p class="text-lg mt-4">
           We believe that technology has the power to solve the world's greatest challenges, and our members are the future leaders who will make that happen.
         </p>
-      </div>
+      </ContentMedia>
 
-      <div class="my-16">
-        <Heading level="h2" class="mb-4">What We Do</Heading>
-        <p class="text-lg mb-8">Comprehensive support for your academic and professional journey</p>
+      <section class="my-32">
+        <Heading level="h2" class="mb-4 text-center">What We Do</Heading>
+        <p class="text-lg mb-8 text-center">Comprehensive support for your academic and professional journey</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Feature icon="lucide:book-open" title="Academic Support">
             <ul class="list-disc list-inside">
@@ -64,11 +64,11 @@ import { Icon } from 'astro-icon/components';
             </ul>
           </Feature>
         </div>
-      </div>
+      </section>
 
-      <div class="my-16">
-        <Heading level="h2" class="mb-4">Membership & Participation</Heading>
-        <p class="text-lg mb-8">Open to all STEM students at Houston Community College</p>
+      <section class="my-32">
+        <Heading level="h2" class="mb-4 text-center">Membership & Participation</Heading>
+        <p class="text-lg mb-8 text-center">Open to all STEM students at Houston Community College</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Feature title="Who Can Join">
             <p>Any currently enrolled HCC student in a STEM program or with interest in technology.</p>
@@ -80,11 +80,11 @@ import { Icon } from 'astro-icon/components';
             <p>Attend at least one event per semester and maintain good academic standing.</p>
           </Feature>
         </div>
-      </div>
+      </section>
 
-      <div class="my-16">
-        <Heading level="h2" class="mb-4">Leadership Team Roles</Heading>
-        <p class="text-lg mb-8">Dedicated students leading CSA into the future</p>
+      <section class="my-32">
+        <Heading level="h2" class="mb-4 text-center">Leadership Team Roles</Heading>
+        <p class="text-lg mb-8 text-center">Dedicated students leading CSA into the future</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Feature title="President">
                 <p class="font-bold">Elected annually by members</p>
@@ -111,11 +111,11 @@ import { Icon } from 'astro-icon/components';
                 <p>Help plan and execute workshops, hackathons, social events, and networking opportunities.</p>
             </Feature>
         </div>
-      </div>
+      </section>
 
-      <div class="my-16">
-        <Heading level="h2" class="mb-4">Elections & Governance</Heading>
-        <p class="text-lg mb-8">Democratic leadership for student empowerment</p>
+      <section class="my-32">
+        <Heading level="h2" class="mb-4 text-center">Elections & Governance</Heading>
+        <p class="text-lg mb-8 text-center">Democratic leadership for student empowerment</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Feature title="Election Process">
             <ul class="list-disc list-inside">
@@ -136,10 +136,10 @@ import { Icon } from 'astro-icon/components';
             </ul>
           </Feature>
         </div>
-      </div>
+      </section>
 
-      <div class="my-16">
-        <Heading level="h2" class="mb-4">HCC Campus Locations</Heading>
+      <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
+        <Heading level="h2">HCC Campus Locations</Heading>
         <p class="text-lg mb-8">CSA serves students across all Houston Community College campuses</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Feature title="Main Campuses">
@@ -161,12 +161,11 @@ import { Icon } from 'astro-icon/components';
             </ul>
           </Feature>
         </div>
-      </div>
+      </ContentMedia>
 
-      <div class="text-center my-16">
+      <div class="text-center my-32">
         <Link href="https://eagleengage.hccs.edu/organization/csa" isButton type="primary" size="lg">Join Now</Link>
       </div>
 
     </div>
-  </section>
 </DefaultLayout>
