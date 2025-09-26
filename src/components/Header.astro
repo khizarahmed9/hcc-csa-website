@@ -18,6 +18,29 @@ import { Icon } from 'astro-icon/components'
     </li>
 
 
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">
+        Socials
+        <Icon aria-hidden="true" name="lucide:chevron-down" size="32" />
+      </button>
+      <ul class="dropdown-menu">
+        <li class="submenu-item">
+          <Link isExternal href="https://discord.gg/hcc-csa">Discord</Link>
+        </li>
+        <li class="submenu-item">
+          <Link isExternal href="https://linkedin.com/company/hcc-csa">LinkedIn</Link>
+        </li>
+        <li class="submenu-item">
+          <Link isExternal href="https://instagram.com/hcc_csa">Instagram</Link>
+        </li>
+        <li class="submenu-item">
+          <Link isExternal href="https://facebook.com/hcc.csa">Facebook</Link>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item highlight">
+      <Link href="https://eagleengage.hccs.edu/organization/csa" isButton type="primary">Join Now</Link>
+    </li>
     <li class="menu-item type-icon animate-rotate">
       <DarkMode>
         <Icon aria-hidden="true" name="lucide:moon" slot="light" />
