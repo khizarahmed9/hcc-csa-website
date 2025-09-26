@@ -1,6 +1,6 @@
 ---
 import DefaultLayout from '@layouts/DefaultLayout.astro';
-import { Heading, Link, Accordion, AccordionItem } from 'accessible-astro-components';
+import { Heading, Link } from 'accessible-astro-components';
 import Feature from '@components/Feature.astro';
 import { Icon } from 'astro-icon/components';
 ---
@@ -85,32 +85,32 @@ import { Icon } from 'astro-icon/components';
       <div class="my-16">
         <Heading level="h2" class="mb-4">Leadership Team Roles</Heading>
         <p class="text-lg mb-8">Dedicated students leading CSA into the future</p>
-        <Accordion>
-          <AccordionItem title="President" name="leadership">
-            <p class="font-bold">Elected annually by members</p>
-            <p>Leads the organization, represents CSA to the college administration, and coordinates with other student organizations.</p>
-          </AccordionItem>
-          <AccordionItem title="Vice President" name="leadership">
-            <p class="font-bold">Elected annually by members</p>
-            <p>Assists the president, coordinates events and workshops, and leads special projects and initiatives.</p>
-          </AccordionItem>
-          <AccordionItem title="Secretary/Treasurer" name="leadership">
-            <p class="font-bold">Elected annually by members</p>
-            <p>Manages membership records, meeting minutes, and coordinates with HCC for room bookings and resources.</p>
-          </AccordionItem>
-          <AccordionItem title="Faculty Advisor" name="leadership">
-            <p class="font-bold">HCC Computer Science Faculty</p>
-            <p>Provides guidance, ensures alignment with college policies, and supports student leadership development.</p>
-          </AccordionItem>
-          <AccordionItem title="Communications Lead" name="leadership">
-            <p class="font-bold">Appointed by officers</p>
-            <p>Manages social media, website updates, and ensures effective communication with members.</p>
-          </AccordionItem>
-          <AccordionItem title="Event Coordinators" name="leadership">
-            <p class="font-bold">Volunteer positions</p>
-            <p>Help plan and execute workshops, hackathons, social events, and networking opportunities.</p>
-          </AccordionItem>
-        </Accordion>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Feature title="President">
+                <p class="font-bold">Elected annually by members</p>
+                <p>Leads the organization, represents CSA to the college administration, and coordinates with other student organizations.</p>
+            </Feature>
+            <Feature title="Vice President">
+                <p class="font-bold">Elected annually by members</p>
+                <p>Assists the president, coordinates events and workshops, and leads special projects and initiatives.</p>
+            </Feature>
+            <Feature title="Secretary/Treasurer">
+                <p class="font-bold">Elected annually by members</p>
+                <p>Manages membership records, meeting minutes, and coordinates with HCC for room bookings and resources.</p>
+            </Feature>
+            <Feature title="Faculty Advisor">
+                <p class="font-bold">HCC Computer Science Faculty</p>
+                <p>Provides guidance, ensures alignment with college policies, and supports student leadership development.</p>
+            </Feature>
+            <Feature title="Communications Lead">
+                <p class="font-bold">Appointed by officers</p>
+                <p>Manages social media, website updates, and ensures effective communication with members.</p>
+            </Feature>
+            <Feature title="Event Coordinators">
+                <p class="font-bold">Volunteer positions</p>
+                <p>Help plan and execute workshops, hackathons, social events, and networking opportunities.</p>
+            </Feature>
+        </div>
       </div>
 
       <div class="my-16">
