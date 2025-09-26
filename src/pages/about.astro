@@ -10,18 +10,18 @@ import { Icon } from 'astro-icon/components';
     <div class="container">
       <Heading level="h1" class="mb-8 text-center">About the Computer Science Association (CSA)</Heading>
 
-      <ContentMedia imgSrc="/accessible-components.webp">
-        <Heading level="h2">Our Mission</Heading>
-        <p class="text-lg">
+      <section class="my-32">
+        <Heading level="h2" class="text-center">Our Mission</Heading>
+        <p class="text-lg text-center mt-4">
           Train, prepare, and unite students for the ever-changing technological frontiers so our members become pioneers of new technologies.
         </p>
-        <p class="text-lg mt-4">
+        <p class="text-lg text-center mt-4">
           The Computer Science Association at Houston Community College is dedicated to fostering a community of passionate STEM students who are committed to learning, growing, and innovating together.
         </p>
-        <p class="text-lg mt-4">
+        <p class="text-lg text-center mt-4">
           We believe that technology has the power to solve the world's greatest challenges, and our members are the future leaders who will make that happen.
         </p>
-      </ContentMedia>
+      </section>
 
       <section class="my-32">
         <Heading level="h2" class="mb-4 text-center">What We Do</Heading>
@@ -138,9 +138,9 @@ import { Icon } from 'astro-icon/components';
         </div>
       </section>
 
-      <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-        <Heading level="h2">HCC Campus Locations</Heading>
-        <p class="text-lg mb-8">CSA serves students across all Houston Community College campuses</p>
+      <section class="my-32">
+        <Heading level="h2" class="text-center">HCC Campus Locations</Heading>
+        <p class="text-lg mb-8 text-center">CSA serves students across all Houston Community College campuses</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Feature title="Main Campuses">
             <ul class="list-disc list-inside">
@@ -161,7 +161,7 @@ import { Icon } from 'astro-icon/components';
             </ul>
           </Feature>
         </div>
-      </ContentMedia>
+      </section>
 
       <div class="text-center my-32">
         <Link href="https://eagleengage.hccs.edu/organization/csa" isButton type="primary" size="lg">Join Now</Link>
