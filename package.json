@@ -22,9 +22,7 @@
     "wcag",
     "responsive",
     "ui-library",
-    "ui-components",
-    "blog",
-    "portfolio"
+    "ui-components"
   ],
   "repository": {
     "type": "git",

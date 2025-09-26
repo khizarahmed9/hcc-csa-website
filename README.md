@@ -4,7 +4,7 @@
 
 <img width="1200" height="627" alt="social-preview" src="https://github.com/user-attachments/assets/fa1a8b50-3aab-4bd3-8f50-1d43586fbd84" />
 
-A ready-to-use, SEO and accessibility-focused Astro starter template. Built with modern web standards, WCAG 2.2 AA guidelines, and European Accessibility Act (EAA) compliance in mind, it provides a solid foundation for creating inclusive websites. Features Tailwind CSS 4 integration, comprehensive component library with enhanced form validation, color contrast checker, and typography with Atkinson Hyperlegible font for improved readability. Includes dynamic blog/portfolio pages with social sharing, contact forms, and full MDX support.
+A ready-to-use, SEO and accessibility-focused Astro starter template. Built with modern web standards, WCAG 2.2 AA guidelines, and European Accessibility Act (EAA) compliance in mind, it provides a solid foundation for creating inclusive websites. Features Tailwind CSS 4 integration, comprehensive component library with enhanced form validation, color contrast checker, and typography with Atkinson Hyperlegible font for improved readability. Includes social sharing, contact forms, and full MDX support.
 
 [![LIVE DEMO](https://img.shields.io/badge/LIVE_DEMO-4ECCA3?style=for-the-badge&logo=astro&logoColor=black)](https://accessible-astro-starter.incluud.dev/) &nbsp;
 [![DOCUMENTATION](https://img.shields.io/badge/DOCUMENTATION-A682FF?style=for-the-badge&logo=astro&logoColor=black)](https://accessible-astro.incluud.dev/) &nbsp;
@@ -30,7 +30,7 @@ A ready-to-use, SEO and accessibility-focused Astro starter template. Built with
 - Accessible landmarks such as `header`, `main`, `footer`, `section` and `nav`
 - Outline focus indicator which works on dark and light backgrounds
 - Several `aria` attributes which provide a better experience for screen reader users
-- `[...page].astro` and `[post].astro` demonstrate the use of dynamic routes and provide a basic blog with breadcrumbs and pagination
+
 - `404.astro` provides a custom 404 error page which you can adjust to your needs
 - `Header.astro` component with optimized accessibility and design
 - `Footer.astro` component with informative content and links
@@ -41,10 +41,10 @@ A ready-to-use, SEO and accessibility-focused Astro starter template. Built with
 - `SiteMeta.astro` SEO component for setting custom meta data on different pages
 - `.sr-only` utility class for screen reader only text content (hides text visually)
 - `prefers-reduced-motion` disables animations for users that have this preference turned on
-- Components including `ColorContrast.astro`, `BlockQuote.astro`, `BreakoutImage.astro`, `Logo.astro`, `SocialShares.astro`, `PageHeader.astro`, `FeaturedPosts.astro`, and `FeaturedProjects.astro`
+- Components including `ColorContrast.astro`, `BlockQuote.astro`, `BreakoutImage.astro`, `Logo.astro`, `SocialShares.astro`, and `PageHeader.astro`
 - Enhanced form components with comprehensive validation: `Form`, `Input`, `Textarea`, `Checkbox`, `Radio`, and `Fieldset` with WCAG 2.2 compliance
 - Automatic form validation with custom patterns, error handling, and screen reader support
-- Blog and portfolio pages with featured images, author details, social sharing, and breakout images
+
 - Contact page with comprehensive form validation showcase and accessibility demonstrations
 - Thank-you page for form submissions with interactive feedback
 - Accessibility Statement template page
