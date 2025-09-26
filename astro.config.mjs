@@ -10,8 +10,8 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
-  site: 'https://khizarahmed9.github.io/hcc-csa-website',
-  // base: '/hcc-csa-website',
+  site: 'https://khizarahmed9.github.io',
+  base: '/hcc-csa-website',
   integrations: [mdx(), icon(), compress(), sitemap()],
   vite: {
     css: {
